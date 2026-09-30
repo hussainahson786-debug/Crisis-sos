@@ -1,0 +1,47 @@
+{
+  "scenarios": [
+    {
+      "intent_id": "homeless_emergency",
+      "sos_intent": "I am homeless or have nowhere safe to sleep tonight",
+      "urgency": "Emergency",
+      "crisis_category": "Housing & Emergency Accommodation",
+      "essential_questions": [
+        "Are you or anyone with you in immediate physical danger?",
+        "Do you have dependent children or vulnerable individuals with you?",
+        "Are you street homeless right now?"
+      ],
+      "service": {
+        "name": "Birmingham City Council Housing Solutions / Homelessness Team",
+        "type": "Statutory Local Authority",
+        "eligibility_notes": "Applies if eligible and homeless or threatened with homelessness within 56 days. Automatic priority need applies if children or vulnerabilities are present.",
+        "contact_route": "Emergency out-of-hours phone line or local housing hub",
+        "official_url": "https://www.gov.uk/homelessness-help-from-council",
+        "last_verified": "2026-09-30",
+        "next_review": "2026-12-30"
+      },
+      "fallback_service": "Contact the Shelter Emergency Helpline for free expert housing and legal rights advice.",
+      "escalation": "If temporary emergency accommodation is refused and children are at risk, Children's Services safeguarding or local emergency support routes can be activated."
+    },
+    {
+      "intent_id": "food_poverty",
+      "sos_intent": "I have no food and cannot afford to buy groceries",
+      "urgency": "High",
+      "crisis_category": "Food Poverty & Hardship",
+      "essential_questions": [
+        "Do you have any means of preparing or cooking food?",
+        "Are there infants or young children needing emergency food or formula?"
+      ],
+      "service": {
+        "name": "Birmingham Crisis and Resilience Fund & Local Food Banks",
+        "type": "Local Welfare Provision / Community Support",
+        "eligibility_notes": "Aimed at Birmingham residents facing severe financial hardship or emergency destitution.",
+        "contact_route": "Apply via Birmingham City Council welfare assistance or local food bank referral networks.",
+        "official_url": "https://www.birmingham.gov.uk",
+        "last_verified": "2026-09-30",
+        "next_review": "2026-12-30"
+      },
+      "fallback_service": "Contact Citizens Advice Birmingham or local community mutual aid groups for emergency food parcels.",
+      "escalation": "If acute medical distress or severe starvation occurs, contact NHS 111 or emergency services."
+    }
+  ]
+}
